@@ -7,7 +7,7 @@ $password = $_POST['password'];
 
 
 
-$verificacion = mysqli_query($conexion, "SELECT * FROM parcial WHERE usuarios = '$username'");
+$verificacion = mysqli_query($conexion, "SELECT * FROM usuarios WHERE username = '$username'");
 $r = mysqli_num_rows($verificacion);
 
 if($r > 0){
@@ -20,7 +20,7 @@ if($r > 0){
     exit;
 }
 
-$insertar = mysqli_query($conexion, "INSERT INTO parcial(username, password, rol) VALUES('$username', '$password', 'rol')");
+$insertar = mysqli_query($conexion, "INSERT INTO usuarios(username, password, id_rol) VALUES('$username', '$password', '$rol')");
 
 if ($insertar){
     echo '
