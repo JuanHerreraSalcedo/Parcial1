@@ -10,6 +10,18 @@
 </head>
 
 <body>
+<header>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <a class="navbar-brand col-1" href="#"><img src="./img/control.png" class="img-thumbnail rounded-circle w-50" alt=""></a>
+                    <a href="registrar.php" class="btn btn-outline-light btn-default px-5 col-3 me-2">Registrar usuarios</a>
+                    <a href="usuarios.php" class="btn btn-outline-light btn-default px-5 col-3 me-2">Lista de usuarios</a>
+                    <a href="logout.php" class="btn btn-outline-light btn-default px-5 col-3 me-2">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section class="vh-100 gradient-custom">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -28,9 +40,9 @@
                                 <div class="mb-4">
                                     <label class="form-label pb-2">Tipo de rol</label>
                                     <select class="select" name="rol">
-                                        <option value="1" disabled>Rol</option>
-                                        <option value="2">admin</option>
-                                        <option value="3">usuario</option>
+                                        <option value="" disabled>Rol</option>
+                                        <option value="1">admin</option>
+                                        <option value="2">usuario</option>
                                     </select>
                                 </div>
 
